@@ -1,0 +1,29 @@
+﻿namespace Lista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> L1 = new List<int> {13, 17 ,38, 47, 3, 2, 8, 50};
+            List<int> L2 = new List<int> {1, 5, 89, 49, 32, 28, 13};
+            List<List<int>> Tudo = new List<List<int>> {L1, L2};
+            
+
+            foreach (var t in Tudo)
+            {
+                foreach (var item in t)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            
+
+        }
+    }
+}
+
+
+
+
+
+-----------------------Incompleto------------------------------------

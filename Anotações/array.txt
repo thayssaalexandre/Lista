@@ -1,0 +1,97 @@
+﻿
+
+List<string> Lista = new List<string>(); (exemplo tipo string)
+// Inicializada vazia
+
+List<string> Lista = new List<string>{"Exemplo (0)", "Exemplo (1)"}; (exemplo tipo string)
+// Inicializado com itens dentro.
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+List<string> Bancos = new List<string> {"Banco do Brasil", "Caixa", "Santander" };
+foreach (var banco in Bancos)
+{
+  Console.WriteLine(banco);
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+
+for (int i = 0; i < Bancos.Count; i++)
+{
+  Console.WriteLine(Bancos[1]); // Uso de for para imprimir uma Lista
+}
+Bancos.ForEach(Console.WriteLine); // Ele vai imprimir na tela todos os valores da lista
+
+////////////////////////////////////////////////////////////////////////////////////
+
+Bancos.Add("Bradesco") // Adiciona valores no final da array
+Bancos.AddRange(new[] { "Bradesco", "Nubank" } // Adiciona mais de um item de uma só vez
+
+////////////////////////////////////////////////////////////////////////////////////
+
+add(x); // Adiciona um valor.
+Bancos.Add("Nubank")
+
+Insert(i, x); // adiciona um valor em um indice especifico.
+Bancos.Insert(2, "Bradesco");
+
+Remove(x); // remove um elemento da lista.
+Bancos.Remove("Nubank");
+
+Sort(); // ordena os itens de uma lista pelo indice.
+Bancos.Sort();
+
+Reverse(); // invertes os itens de uma lista.
+Bancos.Reverse();
+
+Count(); // retorna a quantidade de elementos da lista.
+Bancos.Count();
+
+RemoveAt(Lista.Count()-1) // remove o ultimo elemento de uma lista.
+Bancos.RemoveAt(Bancos.Count() - 1);
+
+RemoveAt(i) // remove elementos pelo indice.
+Bancos.RemoveAt(3);
+
+Clear() // Remove todos os Itens da Lista.
+Bancos.Clear;
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+List<string> Letras = new List<string> {"a", "b", "c"};
+List<string> Numeros = new List<string> {"2", "4", "6"};
+List<List<string>> Tudo = new List<List<string>> {letra, num};
+
+foreach (var t in Tudo)
+{
+	foreach (var item in t)
+	{
+		 Console.WriteLine(item);
+	}
+}
+
+Console.WriteLine($"Letras: {string.join(", ", Tudo[0])}'};
+Console.WriteLine($"Numeros: {string.join(", ", Tudo[0])}'};
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+string valor = "C"
+
+if (Letras.Contains(valor, StringComparer.OrdinalIgnoreCase))
+	Console.WriteLine($"A letra '{valor}' existe na lista.");
+else
+	Console.WriteLine($"A letra '{valor}' não existe na lista.");
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+List<int> Lista = new List<int>();
+
+while (true)
+{
+	Console.Write("Digite um número inteiro(0 para sair): ");
+	int num = int.Parse(COnsole.ReadLine());
+	if (num == 0)
+	break;
+	Nova.Add(num)
+}
+Console.WriteLine(string.join(", ", Nova);

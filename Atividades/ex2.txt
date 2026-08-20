@@ -1,0 +1,33 @@
+﻿namespace Lista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<double> P1 = new List<double> { 8.7, 9.8, 10.0, 8.5 };
+
+            List<double> P2 = new List<double> { 4.0, 6.0, 10.0, 9.5 };
+
+
+            double Media1 = (P1.Sum()) / P1.Count;
+
+            double Media2 = (P2.Sum()) / P2.Count;
+
+
+            if (Media1 > Media2)
+            {
+                Console.WriteLine($"A Lista P1 teva a maior média : '{Media1}'");
+
+                Console.WriteLine(string.Join(", ", P1));
+
+            }
+            else
+            {
+                Console.WriteLine($"A Lista P2 teva a maior média : '{Media2}'");
+
+                Console.WriteLine(string.Join(", ", P2));
+
+            }
+        }
+    }
+}
