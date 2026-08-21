@@ -1,0 +1,44 @@
+﻿using System.ComponentModel.Design;
+
+namespace Lista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> Palavras = new List<string>();
+            
+            while (true)
+            {
+                Console.WriteLine("Escreva uma palavra para adicionar (0 para parar)");
+                string PalavraDigitada = Console.ReadLine().ToLower();
+
+                if (PalavraDigitada == "0")
+                {
+                    break;
+                }
+                else
+                {
+                    Palavras.Add(PalavraDigitada);
+                }
+            }
+
+
+            Console.Write("Qual palavra você quer conatr?");
+            string encontrar = Console.ReadLine().ToLower();
+
+            int contador = 0;
+
+            foreach (string p in Palavras)
+            {
+                
+                if (p == encontrar) 
+                { 
+                    contador++; 
+                }
+            }
+
+            Console.WriteLine($"A palavra {encontrar} apareceu {contador} vezes");
+        }
+    }
+}
